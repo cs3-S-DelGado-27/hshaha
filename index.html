@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+          <title>FA1</title>
+          <meta charset="UTF-8">
+		  <meta name="author" content="Sophia">
+		  <meta name="section" content="Lithium">
+		  <meta name="revised" content="11-17-23">
+      </head>
+            <style>
+              #one:link { 
+                font-size: 18px;
+			    background-color: rgb(0, 0, 0);
+	            text-decoration: none;
+                color: rgb(218, 108, 108); }
+              #one:visited { color: rgb(175, 66, 66); }
+              #one:hover { color: rgb(209, 200, 121); }
+              #one:active { color: rgb(83, 7, 64); }
+
+              #two:link { 
+                font-size: 18px;
+			    background-color: rgb(0, 0, 0);
+	            text-decoration: none;
+                color: green; }
+              #two:visited { color: rgb(197, 44, 44); }
+              #two:hover { color: rgb(97, 90, 199); }
+              #two:active { color: rgb(95, 4, 62); }
+
+              #firstDiv {
+              position: absolute;
+			  top: 60px;
+			  float: left;
+			  width: 100px;
+			  height: 100px;
+              border: 1px solid black;
+              padding: 10px;
+              margin-bottom: 20px;}
+
+              #secondDiv {
+              position: absolute;
+			  top: 180px;
+			  float: left;
+			  width: 100px;
+			  height: 100px;
+              border: 1px solid black;
+              padding: 10px;}
+
+
+              #firstDiv:target {
+              background-color: rgb(146, 83, 146);
+              color: peachpuff;}
+
+              #secondDiv:target {
+              background-color: palevioletred;
+              color:palegoldenrod;
+              border: 10px dotted green;}
+            </style>
+      </head>
+      <body>
+
+        <a href="#firstDiv" id="one">One</a><br>
+        <a href="#secondDiv" id="two">Two</a><br><br>
+
+        <div id="firstDiv">First Div</div>
+        <div id="secondDiv">Second Div</div>
+
+      </body>
+    </html>
